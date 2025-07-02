@@ -79,7 +79,7 @@ def start_scheduler():
     """
     print("[INFO] [Scheduler] Starting background tasks...")
     fetch_valid_coin_list()
-    scheduler.add_job(fetch_all_prices, 'interval', seconds=20)
+    scheduler.add_job(fetch_all_prices, 'interval', seconds=60)
     scheduler.start()
 
 
